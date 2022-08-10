@@ -1,0 +1,12 @@
+general:
+  data_path: "/storage/groups/ml01/workspace/louis.kuemmerle/projects/G1/data/processed/"
+  dataset: "Litvinukova2020.h5ad"
+  gene_subset: "highly_variable"
+  n: 50
+method: asfs
+venv: venv_asfs
+specific:
+  label: "cell_states"
+  num_samples: 300
+
+

@@ -1,0 +1,12 @@
+general:
+  data_path: "/storage/groups/ml01/workspace/louis.kuemmerle/projects/G1/data/processed/"
+  dataset: "Madissoon2019.h5ad"
+  gene_subset: "highly_variable"
+  n: 150
+method: asfs
+venv: venv_asfs
+specific:
+  label: "original_celltype_ann"
+  num_samples: 300
+
+
