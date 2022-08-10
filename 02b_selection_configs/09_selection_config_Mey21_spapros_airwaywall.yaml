@@ -1,0 +1,14 @@
+scheme:    
+general:
+    n: [155]
+    dataset: ["Meyer5loc2021.h5ad"]
+    data_path: ["/storage/groups/ml01/workspace/louis.kuemmerle/projects/G1/data/processed/"]
+    process_adata: [["norm", "log1p"]]
+    gene_subset: ["highly_variable"]
+    obs_subset: ["AirwayWall_obs"]
+    penalty_keys: []
+    
+methods:
+    spapros:
+        specific:
+            celltype_key: ["2Loc_celltypes"]
