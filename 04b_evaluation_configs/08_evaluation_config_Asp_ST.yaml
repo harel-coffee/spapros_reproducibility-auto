@@ -1,0 +1,18 @@
+data:
+    name: "Asp_ST"
+    data_path: "/storage/groups/ml01/workspace/louis.kuemmerle/projects/G1/data/processed/"
+    dataset: "Asp2019_ST_6we.h5ad"
+    process_adata: ["norm", "log1p"]
+    celltype_key: "res.0.8"
+    gene_subset: "highly_variable"   
+metrics:
+    cluster_similarity:
+        ns: [7,60]
+        AUC_borders: [[7, 23], [24, 60]]
+    knn_overlap:
+        ks: [5, 10, 20, 30, 50]
+    forest_clfs:
+        ct_key: "res.0.8"
+        threshold: 0.8
+    gene_corr:
+        threshold: 0.8     
