@@ -1,0 +1,12 @@
+general:
+  data_path: "/storage/groups/ml01/workspace/louis.kuemmerle/projects/G1/data/processed/"
+  dataset: "Litvinukova2020.h5ad"
+  gene_subset: "highly_variable"
+  n: 150
+method: scmer
+venv: venv_gene_selection
+specific:
+  n_pcs: 30
+  n_threads: -1
+  subsample: 10000
+

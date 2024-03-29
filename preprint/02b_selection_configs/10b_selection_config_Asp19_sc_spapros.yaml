@@ -1,0 +1,16 @@
+scheme:    
+general:
+    n: [69]
+    dataset: ["Asp2019.h5ad"]
+    data_path: ["/storage/groups/ml01/workspace/louis.kuemmerle/projects/G1/data/processed/"]
+    process_adata: [["norm", "log1p"]]
+    gene_subset: ["highly_variable"]
+    penalty_keys: []
+methods:
+    spapros:
+        specific:
+            celltype_key: ["celltype"]
+            preselected_genes: [['DCN', 'ELN', 'PPP1R12B', 'NEBL', 'XRCC5', 'CCDC80', 'SFRP1', 'PTN', 'ACTA2', 'MYL2', 'VEGFA', 'RBP1', 'IGFBP5', 'GTF3A', 'MYRF', 'LDHA', 'NAV1', 'ATG10', 'SPHKAP', 'PDLIM3', 'COL1A2', 'MFAP4', 'IGF2', 'NPPA', 'KCTD12', 'FLRT2', 'MYH6', 'S100A6','ENSG00000242349', 'H19', 'HBE1', 'RNU4ATAC', 'RGS5_ENSG00000143248', 'HBA1']] 
+            #preselected_genes: [['DCN', 'ELN', 'PPP1R12B', 'NEBL', 'XRCC5', 'CCDC80', 'SFRP1', 'PTN', 'ACTA2', 'MYL2', 'VEGFA', 'RBP1', 'IGFBP5', 'GTF3A', 'MYRF', 'LDHA', 'NAV1', 'ATG10', 'SPHKAP', 'PDLIM3', 'COL1A2', 'MFAP4', 'IGF2', 'NPPA', 'KCTD12', 'FLRT2', 'MYH6', 'S100A6']]
+            ## needed to leave out the following genes: ['ENSG00000242349', 'H19', 'HBE1', 'RNU4ATAC', 'RGS5_ENSG00000143248', 'HBA1']
+            ## because they're not in the sc dataset.

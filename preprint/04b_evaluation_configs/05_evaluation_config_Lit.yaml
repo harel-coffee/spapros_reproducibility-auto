@@ -1,0 +1,18 @@
+data:
+    name: "Litvinukova"
+    data_path: "/storage/groups/ml01/workspace/louis.kuemmerle/projects/G1/data/processed/"
+    dataset: "Litvinukova2020.h5ad"
+    process_adata: ["norm", "log1p"]
+    celltype_key: "cell_states"
+    gene_subset: "highly_variable"
+metrics:
+    cluster_similarity:
+        ns: [7,60]
+        AUC_borders: [[7, 23], [24, 60]]
+    knn_overlap:
+        ks: [5, 10, 20, 30, 50]
+    forest_clfs:
+        ct_key: "cell_states"
+        threshold: 0.8
+    gene_corr:
+        threshold: 0.8

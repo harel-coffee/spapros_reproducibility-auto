@@ -1,0 +1,12 @@
+scheme:    
+general:
+    n: [34]
+    dataset: ["Asp2019_ST_6we.h5ad"]
+    data_path: ["/storage/groups/ml01/workspace/louis.kuemmerle/projects/G1/data/processed/"]
+    process_adata: [["norm", "log1p"]]
+    gene_subset: ["highly_variable"]
+    penalty_keys: []
+methods:
+    spapros:
+        specific:
+            celltype_key: ["res.0.8"]

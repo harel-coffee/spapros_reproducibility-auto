@@ -1,8 +1,0 @@
-general:
-  data_path: "/storage/groups/ml01/workspace/louis.kuemmerle/projects/G1/data/processed/"
-  dataset: "Madissoon2019.h5ad"
-  gene_subset: "highly_variable"
-  n: 50
-method: triku
-venv: venv_triku
-specific:
